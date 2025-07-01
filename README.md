@@ -5,6 +5,7 @@ Webapp of Football Club Deportivo Latino. The app's purpose is to provide market
 ##Stack 
 - Next.js
 - React
+- Typescript
 - TailwindCSS
 - HyperUI
 - Next-intl
