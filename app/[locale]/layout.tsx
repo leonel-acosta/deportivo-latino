@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Fjalla_One } from "next/font/google";
 import { Roboto } from "next/font/google";
-import "./globals.css";
+import ".././globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,18 +27,26 @@ export const metadata: Metadata = {
   description: "El club de fútbol latinoamericano más grande de Alemania",
 };
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="en">
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${fjalla.className} ${roboto.variable} antialiased relative`}
       >
         <Header />
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
         <Footer />
       </body>
     </html>
