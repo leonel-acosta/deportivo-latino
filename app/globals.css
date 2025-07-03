@@ -12,18 +12,19 @@
   --heading-font: var(--font-fjalla);
 }
 
-@theme inline {
+/* @theme inline {
+
   --color-background: var(--background-primary);
   --color-foreground: var(--foreground);
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background-primary: #0f172a;
     --background-secondary: #1e293b;
     --foreground: #f8fafc;
   }
-}
+} */
 
 body {
   box-sizing: border-box;
