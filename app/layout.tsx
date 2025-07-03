@@ -5,18 +5,18 @@ import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 
-const fjalla = Fjalla_One({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-  variable: "--font-fjalla",
-});
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-roboto",
+});
+
+const fjalla = Fjalla_One({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-fjalla",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fjalla.className} ${roboto.variable} antialiased`}>
+      <body
+        className={`${fjalla.className} ${roboto.variable} antialiased relative`}
+      >
         <Header />
         {children}
         <Footer />

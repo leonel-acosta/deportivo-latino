@@ -3,12 +3,13 @@
 :root {
   --background-primary: #ffffff;
   --background-secondary: #002060;
-  --color-primary: #1e40af;
-  --color-secondary: #334155;
-  --color-tertiary: #0f172a;
+  --primary-color: #1e40af;
+  --secondary-color: #334155;
+  --tertiary-color: #0f172a;
+  --accent-color: #f59e0b;
   --foreground: #111827;
-  --font-body: var(--font-roboto);
-  --font-title: var(--font-fjalla);
+  --body-font: var(--font-roboto);
+  --heading-font: var(--font-fjalla);
 }
 
 @theme inline {
@@ -25,20 +26,123 @@
 }
 
 body {
-  background: var(--background);
+  box-sizing: border-box;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: var(--body-font), Arial, Helvetica, sans-serif !important;
 }
 
-h1,
-h2,
+h1 {
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2.75em;
+}
+
+h2 {
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 2.25em;
+}
+
 h3 {
-  font-family: var(--font-fjalla);
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+h4 {
+  font-family: var(--body-font), Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+h5 {
+  font-family: var(--body-font), Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.1em;
 }
 
 p,
-h4,
-h5,
-h6 {
-  font-family: var(--font-roboto);
+li,
+ul,
+a,
+nav {
+  font-family: var(--body-font), Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.meta {
+  font-family: var(--body-font), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.body-font {
+  font-family: var(--body-font), Arial, Helvetica, sans-serif !important;
+}
+
+.heading-font {
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif !important;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.tertiary {
+  color: var(--tertiary-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.bg-primary {
+  background-color: var(--secondary-color);
+}
+
+.bg-secondary {
+  background-color: var(--primary-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+input {
+  border: var(--primary) solid 2px;
+  color: var(--primary-color);
+}
+
+select {
+  border: var(--primary) solid 2px;
+  color: var(--primary-color);
+  padding: 12px 18px 12px 18px;
+}
+
+textarea {
+  border: var(--primary) solid 2px;
+  color: var(--primary-color);
+  padding: 12px 18px 12px 18px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (min-width: 678px) {
+  .hero h1 {
+    font-size: 80px;
+    text-align: left;
+  }
 }
