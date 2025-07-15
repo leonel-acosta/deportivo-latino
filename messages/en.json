@@ -1,7 +1,9 @@
 {
   "LandingPage": {
     "title": "Club Deportivo Latino",
-    "description": "Un club de fútbol amateur en Berlin, Canadá, dedicado a la comunidad latina.",
-    "heroTitle": "Welcome to Club Deportivo Latino"
+    "description": "An amateur football club in Berlin entirely dedicated to the Latin community.",
+    "heroTitle": "The largest Latin club in Germany",
+    "heroText": "30 years of history and passion for football. Join our community and experience Latin football in Berlin.",
+    "heroButtonText": "Join now"
   }
 }

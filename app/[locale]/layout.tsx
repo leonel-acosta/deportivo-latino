@@ -45,9 +45,11 @@ export default async function LocaleLayout({
       <body
         className={`${fjalla.className} ${roboto.variable} antialiased relative`}
       >
-        <Header />
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        <Footer />
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

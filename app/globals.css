@@ -147,3 +147,42 @@ textarea {
     text-align: left;
   }
 }
+
+.hero-title {
+  font-size: 2.75em !important;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+}
+
+@media (min-width: 678px) {
+  .hero-title {
+    font-size: 4.75em !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.bg-hero {
+  position: relative;
+  background-image: url("https://res.cloudinary.com/dkarbzbwx/image/upload/v1752619664/Portada_msuvu0.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(
+    --background-secondary
+  ); /* or use rgba(0,0,0,0.5) for semi-transparent overlay */
+  z-index: 0;
+  opacity: 50%;
+}
+
+.bg-hero > * {
+  position: relative;
+  z-index: 1;
+}
