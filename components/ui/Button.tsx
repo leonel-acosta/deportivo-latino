@@ -17,7 +17,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`rounded-full py-3 px-5 mx-2 w-fit hover:opacity-80 transition ease-in-out ${
+      className={`rounded-full text-black py-3 px-5 mx-2 w-fit hover:opacity-80 transition ease-in-out uppercase font-bold ${
         primary
           ? "bg-primary"
           : secondary

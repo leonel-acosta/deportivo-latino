@@ -1,7 +1,9 @@
 {
   "LandingPage": {
     "title": "Deportivo Latino e.V.",
-    "description": "Un club de fútbol amateur en Berlin, Canadá, dedicado a la comunidad latina.",
-    "heroTitle": "Deportivo Latino e.V"
+    "description": "Ein Amateurfußballverein in Berlin, der vollständig der lateinamerikanischen Gemeinschaft gewidmet ist.",
+    "heroTitle": "Der größte lateinamerikanische Verein in Deutschland",
+    "heroText": "30 Jahre Geschichte und Leidenschaft für Fußball. Werde Teil unserer Gemeinschaft und erlebe den lateinamerikanischen Fußball in Berlin.",
+    "heroButtonText": "Jetzt beitreten"
   }
 }
