@@ -10,6 +10,7 @@
   --foreground: #111827;
   --body-font: var(--font-roboto);
   --heading-font: var(--font-fjalla);
+  --accent-font: var(--font-permanentmarker);
 }
 
 /* @theme inline {
@@ -149,6 +150,7 @@ textarea {
 }
 
 .hero-title {
+  font-family: var(--font-permanentmarker), Arial, Helvetica, sans-serif !important;
   font-size: 2.75em !important;
   text-transform: uppercase;
   color: white;
@@ -157,8 +159,10 @@ textarea {
 
 @media (min-width: 678px) {
   .hero-title {
+    font-family: var(--font-permanentmarker), Arial, Helvetica, sans-serif !important;
     font-size: 4.75em !important;
     font-weight: 800;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: white;
   }
@@ -175,9 +179,7 @@ textarea {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(
-    --background-secondary
-  ); /* or use rgba(0,0,0,0.5) for semi-transparent overlay */
+  background: var(--background-secondary);
   z-index: 0;
   opacity: 50%;
 }

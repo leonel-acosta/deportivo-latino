@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fjalla_One } from "next/font/google";
 import { Roboto } from "next/font/google";
+import { Permanent_Marker } from "next/font/google";
 import ".././globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
@@ -20,6 +21,13 @@ const fjalla = Fjalla_One({
   weight: "400",
   display: "swap",
   variable: "--font-fjalla",
+});
+
+const permanentmarker = Permanent_Marker({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-permanentmarker",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +51,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${fjalla.className} ${roboto.variable} antialiased relative`}
+        className={`${fjalla.className} ${roboto.variable} ${permanentmarker.variable} antialiased relative`}
       >
         <NextIntlClientProvider>
           <Header />
