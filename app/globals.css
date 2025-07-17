@@ -8,9 +8,9 @@
   --tertiary-color: #0f172a;
   --accent-color: #f59e0b;
   --foreground: #111827;
-  --body-font: var(--font-roboto);
-  --heading-font: var(--font-fjalla);
-  --accent-font: var(--font-permanentmarker);
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Fjalla One", sans-serif;
+  --accent-font: "Permanent Marker", cursive;
 }
 
 /* @theme inline {
@@ -29,7 +29,7 @@
 
 body {
   box-sizing: border-box;
-  color: var(--foreground);
+  color: var(--primary-color);
   background: var(--background);
   font-family: var(--body-font), Arial, Helvetica, sans-serif !important;
 }
@@ -150,7 +150,7 @@ textarea {
 }
 
 .hero-title {
-  font-family: var(--font-permanentmarker), Arial, Helvetica, sans-serif !important;
+  font-family: var(--accent-font), Arial, Helvetica, sans-serif !important;
   font-size: 2.75em !important;
   text-transform: uppercase;
   color: white;
@@ -159,7 +159,7 @@ textarea {
 
 @media (min-width: 678px) {
   .hero-title {
-    font-family: var(--font-permanentmarker), Arial, Helvetica, sans-serif !important;
+    font-family: var(--accent-font), Arial, Helvetica, sans-serif !important;
     font-size: 4.75em !important;
     font-weight: 800;
     letter-spacing: 0.1em;
