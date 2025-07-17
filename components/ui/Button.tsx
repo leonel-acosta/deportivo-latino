@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface ButtonProps {
   text: string;
@@ -6,6 +6,7 @@ interface ButtonProps {
   primary?: boolean;
   secondary?: boolean;
   accent?: boolean;
+  children: ReactNode;
 }
 
 export default function Button({
@@ -14,21 +15,22 @@ export default function Button({
   primary = false,
   secondary = false,
   accent = false,
+  children,
 }: ButtonProps) {
   return (
     <button
-      className={`rounded-full text-black py-3 px-5 mx-2 w-fit hover:opacity-80 transition ease-in-out uppercase font-bold ${
+      className={`text-white rounded-md py-3 px-5 mb-2 w-fit hover:opacity-80 transition ease-in-out uppercase font-bold ${
         primary
-          ? "bg-primary"
+          ? "bg-primary text-white"
           : secondary
-          ? "bg-secondary"
+          ? "bg-secondary text-white"
           : accent
-          ? "bg-accent"
+          ? "bg-accent text-white"
           : "bg-black"
       }`}
       //   onClick={onClick}
     >
-      {text}
+      {children || text}
     </button>
   );
 }

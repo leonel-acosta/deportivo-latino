@@ -30,6 +30,8 @@ export default function Home() {
         imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752760675/pokalspiel_dep_latino_188_qehubo.jpg"
         reverse
         secondary
+        button="Más información"
+        buttonUrl="/#mission"
       />
       <Gallery />
       <Stats />

@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Button from "../ui/Button";
+import Link from "next/link";
 
 interface ImageWithTextProps {
   title: string;
@@ -10,6 +12,8 @@ interface ImageWithTextProps {
   secondary?: boolean;
   tertiary?: boolean;
   imageUrl: string;
+  button?: string;
+  buttonUrl?: string;
 }
 
 export default function ImageWithText({
@@ -21,6 +25,8 @@ export default function ImageWithText({
   secondary,
   tertiary,
   imageUrl,
+  button,
+  buttonUrl,
 }: ImageWithTextProps) {
   const t = useTranslations("LandingPage");
 
@@ -44,7 +50,12 @@ export default function ImageWithText({
           }`}
         >
           <h2 className="uppercase mb-2 heading-font">{title}</h2>
-          <p className="text-lg mb-2">{text}</p>
+          <p className="text-lg mb-6">{text}</p>
+          {button && buttonUrl && (
+            <Link href={buttonUrl}>
+              <Button text={button} />
+            </Link>
+          )}
         </div>
         <div
           className={`w-screen h-[400px] lg:w-[700px] relative overflow-hidden shadow-lg mx-auto ${
