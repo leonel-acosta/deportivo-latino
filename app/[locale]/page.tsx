@@ -39,7 +39,14 @@ export default function Home() {
       <Results />
       <Shop />
       <Fundraising />
-      <Instafeed />
+      <Instafeed
+        sectionId="instafeed"
+        title={t("instafeedTitle")}
+        text={t("instafeedText")}
+        button={t("instafeedButton")}
+        buttonUrl="https://www.instagram.com/clubdeportivolatino"
+        primary
+      />
       <Contact />
     </main>
   );
