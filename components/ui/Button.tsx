@@ -6,7 +6,7 @@ interface ButtonProps {
   primary?: boolean;
   secondary?: boolean;
   accent?: boolean;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export default function Button({
