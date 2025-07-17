@@ -9,12 +9,28 @@ import Teams from "@/components/sections/Teams";
 import Gallery from "@/components/sections/Gallery";
 import Fundraising from "@/components/sections/Fundraising";
 import ".././globals.css";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("LandingPage");
+
   return (
-    <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
+    <main className="flex flex-col row-start-2 items-center sm:items-center">
       <Hero />
-      <ImageWithText />
+      <ImageWithText
+        sectionId="mission"
+        title={t("missionTitle")}
+        text={t("missionText")}
+        imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752618181/Imagen_de_WhatsApp_2025-07-14_a_las_10.33.40_a641ff19_czwzwr.jpg"
+      />
+      <ImageWithText
+        sectionId="goals"
+        title={t("goalsTitle")}
+        text={t("goalsText")}
+        imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752760675/pokalspiel_dep_latino_188_qehubo.jpg"
+        reverse
+        secondary
+      />
       <Gallery />
       <Stats />
       <Teams />
