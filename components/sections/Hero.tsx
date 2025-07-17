@@ -11,7 +11,7 @@ export default function Hero() {
     >
       <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto  text-center">
-          <h1 className="hero-title px-2 text-size-3xl tracking-tight text-white sm:text-4xl lg:text-5xl font-bold sm:text-5xl uppercase">
+          <h1 className="hero-title px-2 text-size-3xl tracking-tight text-white lg:text-5xl font-bold sm:text-5xl uppercase">
             {t("heroTitle")}
           </h1>
 

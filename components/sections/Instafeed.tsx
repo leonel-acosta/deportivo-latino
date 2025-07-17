@@ -32,7 +32,7 @@ export default function Instafeed({
     <>
       <section
         id={sectionId}
-        className={`w-full text-center gap-2 lg:gap-8 gap  lg:p-20 ${
+        className={`w-full text-center gap-2 lg:gap-8 gap py-20 px-5 ${
           primary
             ? "bg-primary text-white"
             : secondary
