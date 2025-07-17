@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-hero bg-cover bg-center md:h-screen secondary lg:grid lg:h-200 w-screen lg:place-content-center"
+      className="bg-hero bg-cover bg-center md:h-screen secondary lg:grid lg:h-200 w-screen lg:place-content-center mb-0"
     >
       <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto  text-center">
