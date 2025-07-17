@@ -42,7 +42,7 @@ export default function Home() {
         valueMembers="126"
         titleNationalities="Nacionalidades"
         valueNationalities="18"
-        secondary
+        primary
       />
       <Teams
         sectionId="teams"
