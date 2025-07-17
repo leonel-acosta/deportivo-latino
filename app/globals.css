@@ -197,3 +197,13 @@ textarea {
 .team-card p {
   font-size: 1.3em !important;
 }
+
+.stats p {
+  font-size: 8em !important;
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif !important;
+  color: var(--accent-color);
+}
+
+.stats h5 {
+  font-family: var(--accent-font), Arial, Helvetica, sans-serif !important;
+}
