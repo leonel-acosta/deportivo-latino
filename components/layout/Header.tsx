@@ -16,7 +16,7 @@ export default function Header() {
         {/* <!-- Desktop menu --> */}
         <ul className="xs:hidden sm:flex sm:space-x-6 md:space-x-6 lg:space-x-8 uppercase text-sm font-semibold flex flex-row items-center justify-center">
           <li>
-            <a href="/#mision" className="hover:underline col-auto">
+            <a href="/#mission" className="hover:underline col-auto">
               Nuestra misión
             </a>
           </li>

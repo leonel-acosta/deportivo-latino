@@ -4,6 +4,10 @@
     "description": "An amateur football club in Berlin entirely dedicated to the Latin community.",
     "heroTitle": "The largest Latin club in Germany",
     "heroText": "30 years of history and passion for football. Join our community and experience Latin football in Berlin.",
-    "heroButtonText": "Join now"
+    "heroButtonText": "Join now",
+    "missionTitle": "Historia e identidad",
+    "missionText": "El Club Deportivo Latino Berlín es una asociación deportiva sin fines de lucro que nace con el objetivo de promover la actividad deportiva en migrantes hispanohablantes//latinos como herramienta para fomentar el deporte, la solidaridad, y la integración social y cultural de las personas.",
+    "goalsTitle": "Integración y Solidaridad",
+    "goalsText": "Nuestro objetivo es promover la integración y la solidaridad entre migrantes hispanohablantes//latinos a través del deporte, creando un espacio donde todos puedan sentirse parte de una comunidad activa y comprometida."
   }
 }
