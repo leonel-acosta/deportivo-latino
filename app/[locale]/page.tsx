@@ -34,7 +34,16 @@ export default function Home() {
         buttonUrl="/#mission"
       />
       <Gallery />
-      <Stats />
+      <Stats
+        sectionId="stats"
+        titleTeams="Equipos"
+        valueTeams="6"
+        titleMembers="Socios"
+        valueMembers="126"
+        titleNationalities="Nacionalidades"
+        valueNationalities="18"
+        primary
+      />
       <Teams
         sectionId="teams"
         title="Equipos"
