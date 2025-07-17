@@ -35,7 +35,12 @@ export default function Home() {
       />
       <Gallery />
       <Stats />
-      <Teams />
+      <Teams
+        sectionId="teams"
+        title="Equipos"
+        text="Los jugadores que nos representan con orgullo en el campo de juego"
+        tertiary
+      />
       <Results />
       <Shop />
       <Fundraising />
