@@ -50,7 +50,7 @@ export default function Home() {
         text="Los jugadores que nos representan con orgullo en el campo de juego"
         tertiary
       />
-      <Results />
+      <Results sectionId="results" title={t("resultsTitle")} text="" />
       <Shop />
       <Fundraising />
       <Instafeed
