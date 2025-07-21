@@ -50,7 +50,7 @@ export default function Home() {
         text="Los jugadores que nos representan con orgullo en el campo de juego"
         tertiary
       />
-      <Results sectionId="results" title={t("resultsTitle")} text="" />
+      <Results />
       <Shop />
       <Fundraising />
       <Instafeed
@@ -61,7 +61,11 @@ export default function Home() {
         buttonUrl="https://www.instagram.com/clubdeportivolatino"
         primary
       />
-      <Contact />
+      <Contact
+        sectionId="contact"
+        title="Contacto"
+        text="Tienes alguna duda o consulta?. Completa el formulario y nos contactaremos a la brevedad"
+      />
     </main>
   );
 }
