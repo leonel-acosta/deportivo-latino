@@ -61,7 +61,11 @@ export default function Home() {
         buttonUrl="https://www.instagram.com/clubdeportivolatino"
         primary
       />
-      <Contact />
+      <Contact
+        sectionId="contact"
+        title={t("contactTitle")}
+        text={t("contactText")}
+      />
     </main>
   );
 }
