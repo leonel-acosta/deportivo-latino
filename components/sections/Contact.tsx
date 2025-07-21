@@ -50,8 +50,7 @@ export default function Contact({
       }`}
     >
       <h2 className="uppercase mb-2 heading-font">{title}</h2>
-      <p className="text-lg mb-6">{text}</p>
-
+      <p className="text-lg mb-0">{text}</p>
       <iframe
         id="JotFormIFrame-252011130906037"
         title="Contacto"

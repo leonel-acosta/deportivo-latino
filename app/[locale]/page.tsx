@@ -63,8 +63,8 @@ export default function Home() {
       />
       <Contact
         sectionId="contact"
-        title="Contacto"
-        text="Tienes alguna duda o consulta?. Completa el formulario y nos contactaremos a la brevedad"
+        title={t("contactTitle")}
+        text={t("contactText")}
       />
     </main>
   );
