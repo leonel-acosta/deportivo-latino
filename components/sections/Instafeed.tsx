@@ -45,13 +45,12 @@ export default function Instafeed({
       >
         <h2 className="uppercase mb-2 heading-font">{title}</h2>
         <p className="text-lg mb-6">{text}</p>
-        <Script src="https://cdn.lightwidget.com/widgets/lightwidget.js" />
+        <Script src="http://cdn.lightwidget.com/widgets/lightwidget.js" />
 
         {embedCode ? (
           <iframe
             src={embedCode}
             scrolling="no"
-            allowTransparency={true}
             className="w-full border-0 overflow-hidden"
             style={{ height: "600px", marginBottom: "20px" }}
           ></iframe>
