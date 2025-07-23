@@ -1,3 +1,6 @@
+import ".././globals.css";
+import { useTranslations } from "next-intl";
+
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import ImageWithText from "@/components/sections/ImageWithText";
@@ -7,9 +10,7 @@ import Shop from "@/components/sections/Shop";
 import Stats from "@/components/sections/Stats";
 import Teams from "@/components/sections/Teams";
 import Gallery from "@/components/sections/Gallery";
-import Fundraising from "@/components/sections/Fundraising";
-import ".././globals.css";
-import { useTranslations } from "next-intl";
+import ImageBanner from "@/components/sections/ImageBanner";
 
 export default function Home() {
   const t = useTranslations("LandingPage");
@@ -52,7 +53,14 @@ export default function Home() {
       />
       <Results sectionId="results" title={t("resultsTitle")} text="" />
       <Shop />
-      <Fundraising />
+      <ImageBanner
+        sectionId="fundraising"
+        title={t("fundraisingTitle")}
+        text={t("fundraisingText")}
+        backgroundImage="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752618181/Imagen_de_WhatsApp_2025-07-14_a_las_10.33.40_a641ff19_czwzwr.jpg"
+        button={t("fundraisingButton")}
+        buttonUrl="https://www.startnext.de/" 
+      />
       <Instafeed
         sectionId="instafeed"
         title={t("instafeedTitle")}
