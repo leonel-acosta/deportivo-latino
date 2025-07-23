@@ -59,7 +59,7 @@ export default function Home() {
         text={t("fundraisingText")}
         backgroundImage="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752618181/Imagen_de_WhatsApp_2025-07-14_a_las_10.33.40_a641ff19_czwzwr.jpg"
         button={t("fundraisingButton")}
-        buttonUrl="https://www.startnext.de/" 
+        buttonUrl="https://www.startnext.de/"
       />
       <Instafeed
         sectionId="instafeed"
@@ -68,6 +68,7 @@ export default function Home() {
         button={t("instafeedButton")}
         buttonUrl="https://www.instagram.com/clubdeportivolatino"
         primary
+        embedCode="//lightwidget.com/widgets/86a3e0d382c45787957189fa6d47e7b4.html"
       />
       <Contact
         sectionId="contact"
