@@ -1,3 +1,4 @@
+import LanguageSwitcher from "../common/LanguageSwitcher";
 import Logo from "../common/Logo";
 
 export default function Footer() {
@@ -193,6 +194,12 @@ export default function Footer() {
           </li>
         </ul>
         <div className="text-center my-2">
+          <p className="text-white">
+            <small>
+              Idioma:
+              <LanguageSwitcher />
+            </small>
+          </p>
           <p>
             <small>2025. Club Deportivo Latino Berlin e.V.</small>
           </p>

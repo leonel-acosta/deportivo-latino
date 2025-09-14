@@ -138,6 +138,11 @@ textarea {
   padding: 12px 18px 12px 18px;
 }
 
+.language-selector {
+  color: white !important;
+  text-decoration: underline;
+}
+
 .hero h1 {
   font-size: 40px;
   text-align: center;
