@@ -1,3 +1,4 @@
+import LanguageSwitcher from "../common/LanguageSwitcher";
 import Logo from "../common/Logo";
 import Button from "../ui/Button";
 
@@ -34,6 +35,9 @@ export default function Header() {
             <a href="/#contact">
               <Button accent text={"ÚNETE"} />
             </a>
+          </li>
+          <li>
+            <LanguageSwitcher />
           </li>
         </ul>
       </nav>
