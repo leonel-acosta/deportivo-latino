@@ -1,46 +1,87 @@
+"use client";
+
+import { useState } from "react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import LanguageSwitcher from "../common/LanguageSwitcher";
 import Logo from "../common/Logo";
 import Button from "../ui/Button";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
-    <header className="sticky top-0 bg-secondary text-white py-4 px-10 text-center flex flex-row items-center justify-between z-50">
-      <div className="w-24" style={{ alignItems: "center" }}>
-        <a href="/#" className="hover:underline col-auto">
+    <header className="sticky top-0 bg-secondary text-white py-4 px-6 sm:px-10 flex items-center justify-between z-50">
+      {/* Logo */}
+      <div className="w-24">
+        <a href="/#" className="hover:underline">
           <Logo />
         </a>
-        {/* <h1 className="text-2xl font-bold">Deportivo Latino</h1> */}
       </div>
-      <nav className="mt-2 body-font">
-        {/* <!-- Mobile menu --> */}
 
-        {/* <!-- Desktop menu --> */}
-        <ul className="xs:hidden sm:flex sm:space-x-6 md:space-x-6 lg:space-x-8 uppercase text-sm font-semibold flex flex-row items-center justify-center">
-          <li>
-            <a href="/#mission" className="hover:underline col-auto">
+      {/* Desktop Menu */}
+      <nav className="hidden sm:flex space-x-6 lg:space-x-8 uppercase text-sm font-semibold items-center">
+        <a href="/#mission" className="hover:underline">
+          Nuestra misión
+        </a>
+        <a href="/#teams" className="hover:underline">
+          Equipos
+        </a>
+        <a href="/#contact" className="hover:underline">
+          Contacto
+        </a>
+        <a href="/#contact">
+          <Button accent text="ÚNETE" />
+        </a>
+        <LanguageSwitcher />
+      </nav>
+
+      {/* Mobile Hamburger Icon */}
+      <div className="sm:hidden">
+        <button onClick={toggleMenu} aria-label="Open menu">
+          <Bars3Icon className="h-8 w-8 text-white" />
+        </button>
+      </div>
+
+      {/* Overlay: optional click outside to close */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40" onClick={closeMenu}>
+          {/* Invisible backdrop (10% width left side) */}
+          <div className="w-[10%] h-full inline-block" />
+
+          {/* Menu panel (90% width) */}
+          <div
+            className="w-[90%] h-screen bg-secondary text-white fixed top-0 right-0 z-50 shadow-lg px-8 py-10 flex flex-col space-y-8 text-xl font-semibold uppercase"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeMenu}
+              aria-label="Close menu"
+              className="absolute top-5 right-5"
+            >
+              <XMarkIcon className="h-8 w-8 text-white" />
+            </button>
+
+            {/* Nav Links */}
+            <a href="/#mission" onClick={closeMenu} className="hover:underline">
               Nuestra misión
             </a>
-          </li>
-          <li>
-            <a href="/#teams" className="hover:underline col-auto ">
+            <a href="/#teams" onClick={closeMenu} className="hover:underline">
               Equipos
             </a>
-          </li>
-          <li>
-            <a href="/#contact" className="hover:underline col-auto">
+            <a href="/#contact" onClick={closeMenu} className="hover:underline">
               Contacto
             </a>
-          </li>
-          <li>
-            <a href="/#contact">
-              <Button accent text={"ÚNETE"} />
+            <a href="/#contact" onClick={closeMenu}>
+              <Button accent text="ÚNETE" />
             </a>
-          </li>
-          <li>
             <LanguageSwitcher />
-          </li>
-        </ul>
-      </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
