@@ -18,5 +18,11 @@
     "instafeedButton": "Síguenos",
     "contactTitle": "Contacto",
     "contactText": "¿Tienes preguntas o quieres unirte a nosotros? Contáctanos a través del formulario."
+  },
+  "ImpressumPage": {
+    "impressumTitle": "impressum",
+    "impressumText": "",
+    "contactTitle": "Contacto",
+    "contactText": "¿Tienes preguntas o quieres unirte a nosotros? Contáctanos a través del formulario."
   }
 }

@@ -15,5 +15,11 @@
     "fundraisingText": "Mit deiner Unterstützung können wir weiter wachsen und mehr Möglichkeiten für unsere Gemeinschaft bieten. Jeder Beitrag zählt!",
     "contactTitle": "Kontakt",
     "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
+  },
+  "ImpressumPage": {
+    "impressumTitle": "impressum",
+    "impressumText": "",
+    "contactTitle": "Kontakt",
+    "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
   }
 }
