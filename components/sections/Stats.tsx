@@ -48,20 +48,24 @@ export default function Stats({
             : "bg-white text-foreground"
         }`}
       >
-        <h2 className="uppercase mb-2 heading-font">{title}</h2>
-        <p className="text-lg mb-6">{text}</p>
+        {title && text && (
+          <>
+            <h2 className="uppercase mb-2 heading-font">{title}</h2>
+            <p className="text-lg mb-6">{text}</p>
+          </>
+        )}
         <div className="flex flex-wrap flex-row justify-evenly gap-10">
           <div className="flex flex-col items-center gap-0">
-            <h5 className="text-2xl font-bold">{titleTeams}</h5>
             <p className="text-lg">{valueTeams}</p>
+            <h5 className="text-2xl font-bold">{titleTeams}</h5>
           </div>
           <div className="flex flex-col items-center gap-0">
-            <h5 className="text-2xl font-bold">{titleMembers}</h5>
             <p className="text-lg">{valueMembers}</p>
+            <h5 className="text-2xl font-bold">{titleMembers}</h5>
           </div>
           <div className="flex flex-col items-center gap-0">
-            <h5 className="text-2xl font-bold">{titleNationalities}</h5>
             <p className="text-lg">{valueNationalities}</p>
+            <h5 className="text-2xl font-bold">{titleNationalities}</h5>
           </div>
         </div>
       </section>
