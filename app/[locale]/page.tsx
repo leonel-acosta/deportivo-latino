@@ -54,11 +54,11 @@ export default function Home() {
       />
       <Stats
         sectionId="stats"
-        titleTeams={[t("statsTeams")]}
+        titleTeams={t("statsTeams")}
         valueTeams="6"
-        titleMembers={[t("statsMembers")]}
+        titleMembers={t("statsMembers")}
         valueMembers="126"
-        titleNationalities={[t("statsNationalities")]}
+        titleNationalities={t("statsNationalities")}
         valueNationalities="18"
         primary
       />

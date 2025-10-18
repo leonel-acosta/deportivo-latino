@@ -57,15 +57,15 @@ export default function Stats({
         <div className="flex flex-wrap flex-row justify-evenly gap-10">
           <div className="flex flex-col items-center gap-0">
             <p className="text-lg">{valueTeams}</p>
-            <h5 className="text-2xl font-bold">{titleTeams}</h5>
+            <h4 className="text-2xl font-bold">{titleTeams}</h4>
           </div>
           <div className="flex flex-col items-center gap-0">
             <p className="text-lg">{valueMembers}</p>
-            <h5 className="text-2xl font-bold">{titleMembers}</h5>
+            <h4 className="text-2xl font-bold">{titleMembers}</h4>
           </div>
           <div className="flex flex-col items-center gap-0">
             <p className="text-lg">{valueNationalities}</p>
-            <h5 className="text-2xl font-bold">{titleNationalities}</h5>
+            <h4 className="text-2xl font-bold">{titleNationalities}</h4>
           </div>
         </div>
       </section>
