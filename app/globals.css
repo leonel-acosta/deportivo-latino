@@ -8,8 +8,8 @@
   --tertiary-color: #0f172a;
   --accent-color: #f59e0b;
   --foreground: #111827;
-  --body-font: "Roboto", sans-serif;
-  --heading-font: "Fjalla One", sans-serif;
+  --body-font: "Space Mono", sans-serif;
+  --heading-font: "Space Grotesk", sans-serif;
   --accent-font: "Permanent Marker", cursive;
 }
 
@@ -36,19 +36,19 @@ body {
 
 h1 {
   font-family: var(--heading-font), Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 2.75em;
 }
 
 h2 {
   font-family: var(--heading-font), Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3em;
 }
 
 h3 {
   font-family: var(--heading-font), Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.25em;
 }
 
@@ -156,18 +156,18 @@ textarea {
 }
 
 .hero-title {
-  font-family: var(--accent-font), Arial, Helvetica, sans-serif !important;
-  font-size: 2.75em !important;
+  font-family: var(--heading-font), Arial, Helvetica, sans-serif !important;
+  font-size: 4em !important;
   text-transform: uppercase;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 @media (min-width: 678px) {
   .hero-title {
-    font-family: var(--accent-font), Arial, Helvetica, sans-serif !important;
+    font-family: var(--heading-font), Arial, Helvetica, sans-serif !important;
     font-size: 4.75em !important;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: white;
