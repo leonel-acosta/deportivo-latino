@@ -19,15 +19,16 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`text-white rounded-md py-3 px-5 mb-2 w-fit hover:opacity-80 transition ease-in-out uppercase font-bold ${
-        primary
-          ? "bg-primary text-white"
-          : secondary
-          ? "bg-secondary text-white"
-          : accent
-          ? "bg-accent text-white"
-          : "bg-black"
-      }`}
+      className={`text-white py-4 px-8 mb-2 hover:opacity-70 transition ease-in-out uppercase 
+        ${
+          primary
+            ? "bg-primary text-white"
+            : secondary
+            ? "bg-secondary text-white"
+            : accent
+            ? "bg-accent text-white"
+            : "bg-black"
+        }`}
       //   onClick={onClick}
     >
       {children || text}
