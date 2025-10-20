@@ -143,11 +143,6 @@ textarea {
   text-decoration: underline;
 }
 
-.hero h1 {
-  font-size: 40px;
-  text-align: center;
-}
-
 @media (min-width: 678px) {
   .hero h1 {
     font-size: 80px;

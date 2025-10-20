@@ -58,9 +58,7 @@ export default function ImageWithText({
         <div
           className={`h-fit px-10 lg:px-20 py-20 my-auto ${
             reverse ? "order-first lg:order-last" : "order-first lg:order-first"
-          } ${
-            center ? "text-center lg:text-center" : "text-left lg:text-left"
-          }`}
+          } ${center ? "text-left lg:text-center" : "text-left lg:text-left"}`}
         >
           <h2 className="uppercase mb-2 heading-font">{title}</h2>
           <p className="text-lg mb-6">{text}</p>
