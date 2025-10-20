@@ -94,7 +94,6 @@ export default function Home() {
         button={t("instafeedButton")}
         buttonUrl="https://www.instagram.com/clubdeportivolatino"
         primary
-        embedCode="//lightwidget.com/widgets/86a3e0d382c45787957189fa6d47e7b4.html"
       />
       <Contact
         sectionId="contact"
