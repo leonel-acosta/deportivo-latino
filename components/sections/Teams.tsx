@@ -62,21 +62,29 @@ export default function Teams({
             title="HERREN III"
             subtitle="kreisliga C"
             text={t("thirdTeamCaption")}
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1761127324/CO0I6864_nzkren.jpg"
+            imageAlt="tercer equipo"
           />
           <TeamCard
             title="U-40"
             subtitle="kreisliga"
             text={t("u40TeamCaption")}
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1761151701/logo_ffrj27.jpg"
+            imageAlt="u40 equipo"
           />
           <TeamCard
             title="U-50"
             subtitle="kreisliga"
             text={t("u50TeamCaption")}
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1761151701/logo_ffrj27.jpg"
+            imageAlt="u50 equipo"
           />
           <TeamCard
             title="FRAUEN"
             subtitle="kreisliga"
             text={t("womenTeamCaption")}
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1761151701/logo_ffrj27.jpg"
+            imageAlt="equipo femenino"
           />
         </div>
 

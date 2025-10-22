@@ -19,7 +19,7 @@ export default function Home() {
         sectionId="hero"
         title={t("heroTitle")}
         text={t("heroText")}
-        backgroundImageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752619664/Portada_msuvu0.png"
+        backgroundImageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1761151701/solidaridad-1_powbut.jpg"
         button={t("heroButtonText")}
         buttonUrl="#contact"
       />
@@ -48,7 +48,7 @@ export default function Home() {
         sectionId="goals"
         title={t("goalsTitle")}
         text={t("goalsText")}
-        imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1760775933/AS0W9328_c4cqkn.jpg"
+        imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1760775938/AS0W9655_rr79jy.jpg"
         reverse
         tertiary
       />
@@ -83,7 +83,7 @@ export default function Home() {
         sectionId="fundraising"
         title={t("fundraisingTitle")}
         text={t("fundraisingText")}
-        backgroundImage="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752760675/pokalspiel_dep_latino_188_qehubo.jpg"
+        backgroundImage="https://res.cloudinary.com/dkarbzbwx/image/upload/v1760775933/AS0W9328_c4cqkn.jpg"
         button={t("fundraisingButton")}
         buttonUrl="https://www.startnext.de/"
       />
