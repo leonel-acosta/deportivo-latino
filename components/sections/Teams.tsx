@@ -47,26 +47,36 @@ export default function Teams({
           <TeamCard
             title="HERREN I"
             subtitle="kreisliga A"
-            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1752781713/pokalspiel_dep_latino_162_kjeoaa.jpg"
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1760775932/AS0W6759_crvfh7.jpg"
             imageAlt="primer equipo"
-            text="ALTO RENDIMIENTO"
+            text={t("firstTeamCaption")}
           />
           <TeamCard
             title="HERREN II"
             subtitle="kreisliga C"
-            text="DESARROLLO TÁCTICO"
+            text={t("secondTeamCaption")}
+            imageUrl="https://res.cloudinary.com/dkarbzbwx/image/upload/v1760776387/latino-II_t698h4.jpg"
+            imageAlt="segundo equipo"
           />
           <TeamCard
             title="HERREN III"
             subtitle="kreisliga C"
-            text="FORMATIVO"
+            text={t("thirdTeamCaption")}
           />
-          <TeamCard title="U-40" subtitle="kreisliga" text="SENIOR" />
-          <TeamCard title="U-50" subtitle="kreisliga" text="MASTER" />
+          <TeamCard
+            title="U-40"
+            subtitle="kreisliga"
+            text={t("u40TeamCaption")}
+          />
+          <TeamCard
+            title="U-50"
+            subtitle="kreisliga"
+            text={t("u50TeamCaption")}
+          />
           <TeamCard
             title="FRAUEN"
             subtitle="kreisliga"
-            text="FUTBOL FEMENINO"
+            text={t("womenTeamCaption")}
           />
         </div>
 

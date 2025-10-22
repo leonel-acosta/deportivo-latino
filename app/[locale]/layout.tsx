@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Fjalla_One } from "next/font/google";
-import { Roboto } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import { Permanent_Marker } from "next/font/google";
 import ".././globals.css";
 import Footer from "@/components/layout/Footer";
@@ -9,18 +9,18 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-const roboto = Roboto({
+const spaceMono = Space_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "700"],
   display: "swap",
-  variable: "--font-roboto",
+  variable: "--font-space-mono",
 });
 
-const fjalla = Fjalla_One({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
-  variable: "--font-fjalla",
+  variable: "--font-space-grotesk",
 });
 
 const permanentmarker = Permanent_Marker({
@@ -51,7 +51,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${fjalla.variable} ${roboto.variable} ${permanentmarker.variable} antialiased relative`}
+        className={`${spaceGrotesk.variable} ${spaceMono.variable} ${permanentmarker.variable} antialiased relative`}
       >
         <NextIntlClientProvider>
           <Header />

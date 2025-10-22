@@ -45,16 +45,26 @@ export default function Instafeed({
       >
         <h2 className="uppercase mb-2 heading-font">{title}</h2>
         <p className="text-lg mb-6">{text}</p>
-        <Script src="http://cdn.lightwidget.com/widgets/lightwidget.js" />
+        <Script
+          type="text/javascript"
+          src="https://widget.tagembed.com/embed.min.js"
+        />
 
-        {embedCode ? (
+        {/* {embedCode ? (
           <iframe
             src={embedCode}
             scrolling="no"
             className="w-full border-0 overflow-hidden"
             style={{ height: "600px", marginBottom: "20px" }}
           ></iframe>
-        ) : null}
+        ) : null}  */}
+
+        <div
+          className="tagembed-widget"
+          style={{ width: "100%", height: "100%", overflow: "auto" }}
+          data-widget-id="304737"
+          data-website="1"
+        ></div>
 
         {button && buttonUrl && (
           <Link href={buttonUrl}>
