@@ -18,8 +18,10 @@
   },
   "ImpressumPage": {
     "impressumTitle": "Impressum",
-    "impressumText": "",
-    "contactTitle": "Kontakt",
-    "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
+    "impressumText": ""
+  },
+  "PrivacyPage": {
+    "privacyTitle": "Datenschutz",
+    "privacyText": ""
   }
 }
