@@ -33,6 +33,29 @@
     "instafeedText": "Stay up to date with our activities and events through Instagram.",
     "instafeedButton": "Follow",
     "contactTitle": "Contact",
+    "contactText": "Do you have questions or want to join us? Get in touch through the form."
+  },
+  "Header": {
+    "homeLink": "Home",
+    "missionLink": "Mission",
+    "teamsLink": "Teams",
+    "resultsLink": "Results",
+    "fundraisingLink": "Support Us",
+    "contactLink": "Contact",
+    "joinButton": "Join"
+  },
+  "Footer": {
+    "footerSlogan": "30 years promoting football and Latin American culture in Berlin.",
+    "homeLink": "Home",
+    "missionLink": "Mission",
+    "teamsLink": "Teams",
+    "resultsLink": "Results",
+    "fundraisingLink": "Support Us",
+    "contactLink": "Contact",
+    "imprintLink": "Imprint",
+    "privacyLink": "Privacy Policy",
+    "languageSwitcherLabel": "Language",
+    "copyright": "All rights reserved."
     "contactText": "Do you have questions or want to join us? Contact us through the form."
   },
   "ImpressumPage": {

@@ -5,8 +5,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import LanguageSwitcher from "../common/LanguageSwitcher";
 import Logo from "../common/Logo";
 import Button from "../ui/Button";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -24,16 +27,16 @@ export default function Header() {
       {/* Desktop Menu */}
       <nav className="hidden sm:flex space-x-6 lg:space-x-8 uppercase text-sm font-semibold items-center">
         <a href="/#mission" className="hover:underline">
-          Nuestra misión
+          {t("missionLink")}
         </a>
         <a href="/#teams" className="hover:underline">
-          Equipos
+          {t("teamsLink")}
         </a>
         <a href="/#contact" className="hover:underline">
-          Contacto
+          {t("contactLink")}
         </a>
         <a href="/#contact">
-          <Button accent text="ÚNETE" />
+          <Button accent text={t("joinButton")} />
         </a>
         <LanguageSwitcher />
       </nav>
@@ -67,16 +70,16 @@ export default function Header() {
 
             {/* Nav Links */}
             <a href="/#mission" onClick={closeMenu} className="hover:underline">
-              Nuestra misión
+              {t("missionLink")}
             </a>
             <a href="/#teams" onClick={closeMenu} className="hover:underline">
-              Equipos
+              {t("teamsLink")}
             </a>
             <a href="/#contact" onClick={closeMenu} className="hover:underline">
-              Contacto
+              {t("contactLink")}
             </a>
             <a href="/#contact" onClick={closeMenu}>
-              <Button accent text="ÚNETE" />
+              <Button accent text={t("joinButton")} />
             </a>
             <LanguageSwitcher />
           </div>
