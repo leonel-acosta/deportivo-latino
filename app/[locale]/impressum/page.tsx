@@ -19,89 +19,84 @@ export default function ImpressumPage() {
 
   return (
     <main className="flex flex-col row-start-2 items-center sm:items-center">
-      <PageTitle
-        sectionId="impressum"
-        title={t("impressumTitle")}
-        text={t("impressumText")}
-      />
+      <PageTitle sectionId="impressum" title={t("impressumTitle")} />
 
       <section
         id="content"
         className="w-full lg:gap-8 gap lg:p-20 bg-white text-foreground border-b-4 border-primary-500"
       >
-        <div className="h-fit px-10 lg:px-20 py-5 my-auto">
-          <HtmlBlock
-            content={
-              <>
-                <p>
-                  <strong>
-                    Responsable del contenido, diseño y estructura de estas
-                    páginas:
-                  </strong>
-                </p>
-                <p>
-                  <strong>Club Deportivo Latino e.V.</strong>
-                  <br />
-                  [Dirección completa del club]
-                  <br />
-                  [Código postal, Ciudad, País]
-                </p>
-                <p>
-                  Tel.: [Número de teléfono principal]
-                  <br />
-                  Fax: [Número de fax, si aplica]
-                  <br />
-                  Correo electrónico:{" "}
-                  <a href="mailto:info@club-latino.de">info@club-latino.de</a>
-                  <br />
-                  Webmaster:{" "}
-                  <a href="mailto:webmaster@club-latino.de">
-                    webmaster@club-latino.de
-                  </a>
-                  <br />
-                  Sitio web:{" "}
-                  <a href="https://www.club-latino.de">www.club-latino.de</a>
-                </p>
-                <p>
-                  <strong>Personas con poder de representación:</strong>
-                  <br />
-                  [Nombre, cargo – Presidente/a]
-                  <br />
-                  [Nombre, cargo – Vicepresidente/a]
-                  <br />
-                  [Nombre, cargo – Tesorero/a]
-                </p>
-                <p>
-                  Registro de asociaciones: Amtsgericht Charlottenburg, Berlin
-                  <br />
-                  Número de registro: [VR-XXXX]
-                  <br />
-                  Número fiscal: [Steuer-Nr. XX/XXX/XXXXX]
-                </p>
-
-                <hr />
-                <br />
-                <h3>Cláusula de responsabilidad</h3>
-                <p>
-                  Los contenidos publicados en el sitio web del Club Deportivo
-                  Latino e.V. han sido elaborados con el mayor cuidado posible.
-                  Sin embargo, no se garantiza la actualidad, exactitud o
-                  integridad de la información proporcionada.
-                </p>
-                <p>
-                  Todas las informaciones se ofrecen sin garantía. Se excluyen
-                  las reclamaciones de responsabilidad derivadas del uso de esta
-                  información.
-                </p>
-                <p>
-                  A pesar del cuidadoso control de los contenidos, no asumimos
-                  ninguna responsabilidad por los contenidos de los enlaces
-                  externos. Los responsables del contenido de las páginas
-                  enlazadas son exclusivamente sus respectivos operadores.
-                </p>
-              </>
-            }
-          />
+        <div className="h-fit w-3/4 m-auto  py-10 my-auto">
+          <p>
+            <strong>
+              Person responsible for the content, design, and structure of these
+              pages:
+            </strong>
+          </p>
+          <p>
+            <strong>Club Deportivo Latino Berlin e.V.</strong>
+            <br />
+            c/o Jaime Engo
+            <br />
+            Karl-Marx-Strasse 45
+            <br />
+            12043 Berlin, Germany
+          </p>
+          <br />
+          <p>
+            Tel.: [Main phone number]
+            <br />
+            Fax: [Fax number, if applicable]
+            <br />
+            Email: <a href="mailto:info@club-latino.de">info@club-latino.de</a>
+            <br />
+            Webmaster:{" "}
+            <a href="mailto:webmaster@club-latino.de">
+              webmaster@club-latino.de
+            </a>
+            <br />
+            Website:{" "}
+            <a href="https://www.clubdeportivolatinoberlin.com/">
+              www.clubdeportivolatinoberlin.com
+            </a>
+          </p>
+          <br />
+          <p>
+            <strong>Authorized representatives:</strong>
+            <br />
+            Jaime Engo Morales – President
+            <br />
+            Ivan Antonio Bulacio – Vice President
+            <br />
+            Joel Juarez – Treasurer
+          </p>
+          <br />
+          <p>
+            Register of Associations: Amtsgericht Charlottenburg, Berlin
+            <br />
+            Registration number: VR 15880 B
+            <br />
+            Tax number: [To be added if available]
+          </p>
+          <br />
+          <hr />
+          <br />
+          <h3>Disclaimer</h3>
+          <p>
+            The contents published on the website of Club Deportivo Latino
+            Berlin e.V. have been prepared with the greatest possible care.
+            However, no guarantee is given for the timeliness, accuracy, or
+            completeness of the information provided.
+          </p>
+          <br />
+          <p>
+            All information is provided without warranty. Liability claims
+            resulting from the use of this information are excluded.
+          </p>
+          <p>
+            Despite careful content control, we assume no responsibility for the
+            content of external links. The operators of the linked pages are
+            solely responsible for their content.
+          </p>
         </div>
       </section>
 
