@@ -34,5 +34,27 @@
     "instafeedButton": "Síguenos",
     "contactTitle": "Contacto",
     "contactText": "¿Tienes preguntas o quieres unirte a nosotros? Contáctanos a través del formulario."
+  },
+  "Header": {
+    "homeLink": "Inicio",
+    "missionLink": "Misión",
+    "teamsLink": "Equipos",
+    "resultsLink": "Resultados",
+    "fundraisingLink": "Apoya",
+    "contactLink": "Contacto",
+    "joinButton": "Únete"
+  },
+  "Footer": {
+    "footerSlogan": "30 años promoviendo el fútbol y la cultura latinoamericana en Berlín.",
+    "homeLink": "Inicio",
+    "missionLink": "Misión",
+    "teamsLink": "Equipos",
+    "resultsLink": "Resultados",
+    "fundraisingLink": "Apoya",
+    "contactLink": "Contacto",
+    "imprintLink": "Impressum",
+    "privacyLink": "Política de Privacidad",
+    "languageSwitcherLabel": "Idioma",
+    "copyright": "Todos los derechos reservados."
   }
 }

@@ -34,5 +34,27 @@
     "instafeedButton": "Folgen",
     "contactTitle": "Kontakt",
     "contactText": "Hast du Fragen oder möchtest du mitmachen? Kontaktiere uns über das Formular."
+  },
+  "Header": {
+    "homeLink": "Startseite",
+    "missionLink": "Mission",
+    "teamsLink": "Teams",
+    "resultsLink": "Ergebnisse",
+    "fundraisingLink": "Unterstützen",
+    "contactLink": "Kontakt",
+    "joinButton": "Mitmachen"
+  },
+  "Footer": {
+    "footerSlogan": "30 Jahre Förderung des Fußballs und der lateinamerikanischen Kultur in Berlin.",
+    "homeLink": "Startseite",
+    "missionLink": "Mission",
+    "teamsLink": "Teams",
+    "resultsLink": "Ergebnisse",
+    "fundraisingLink": "Unterstützen",
+    "contactLink": "Kontakt",
+    "imprintLink": "Impressum",
+    "privacyLink": "Datenschutzerklärung",
+    "languageSwitcherLabel": "Sprache",
+    "copyright": "Alle Rechte vorbehalten."
   }
 }
