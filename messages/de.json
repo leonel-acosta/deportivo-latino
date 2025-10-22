@@ -33,6 +33,14 @@
     "instafeedText": "Bleibe über unsere Aktivitäten und Veranstaltungen auf Instagram auf dem Laufenden.",
     "instafeedButton": "Folgen",
     "contactTitle": "Kontakt",
-    "contactText": "Hast du Fragen oder möchtest du mitmachen? Kontaktiere uns über das Formular."
+    "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
+  },
+  "ImpressumPage": {
+    "impressumTitle": "Impressum",
+    "impressumText": ""
+  },
+  "PrivacyPage": {
+    "privacyTitle": "Datenschutz",
+    "privacyText": ""
   }
 }

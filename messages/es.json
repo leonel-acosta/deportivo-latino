@@ -34,5 +34,14 @@
     "instafeedButton": "Síguenos",
     "contactTitle": "Contacto",
     "contactText": "¿Tienes preguntas o quieres unirte a nosotros? Contáctanos a través del formulario."
+  },
+
+  "ImpressumPage": {
+    "impressumTitle": "Impressum",
+    "impressumText": ""
+  },
+  "PrivacyPage": {
+    "privacyTitle": "Política de Privacidad",
+    "privacyText": ""
   }
 }

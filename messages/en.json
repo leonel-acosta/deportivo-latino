@@ -33,6 +33,14 @@
     "instafeedText": "Stay up to date with our activities and events through Instagram.",
     "instafeedButton": "Follow",
     "contactTitle": "Contact",
-    "contactText": "Do you have questions or want to join us? Get in touch through the form."
+    "contactText": "Do you have questions or want to join us? Contact us through the form."
+  },
+  "ImpressumPage": {
+    "impressumTitle": "Imprint",
+    "impressumText": ""
+  },
+  "PrivacyPage": {
+    "privacyTitle": "Privacy Policy",
+    "privacyText": ""
   }
 }
