@@ -56,5 +56,14 @@
     "privacyLink": "Datenschutzerklärung",
     "languageSwitcherLabel": "Sprache",
     "copyright": "Alle Rechte vorbehalten."
+    "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
+  },
+  "ImpressumPage": {
+    "impressumTitle": "Impressum",
+    "impressumText": ""
+  },
+  "PrivacyPage": {
+    "privacyTitle": "Datenschutz",
+    "privacyText": ""
   }
 }
