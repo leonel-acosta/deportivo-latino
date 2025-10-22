@@ -1,21 +1,9 @@
 import "../../globals.css";
 import { useTranslations } from "next-intl";
-
-import Contact from "@/components/sections/Contact";
-import Hero from "@/components/sections/Hero";
-import ImageWithText from "@/components/sections/ImageWithText";
-import Instafeed from "@/components/sections/Instafeed";
-import Results from "@/components/sections/Results";
-import Shop from "@/components/sections/Shop";
-import Stats from "@/components/sections/Stats";
-import Teams from "@/components/sections/Teams";
-import Gallery from "@/components/sections/Gallery";
-import ImageBanner from "@/components/sections/ImageBanner";
 import PageTitle from "@/components/sections/PageTitle";
-import HtmlBlock from "@/components/common/HtmlBlock";
 
 export default function ImpressumPage() {
-  const t = useTranslations("ImpressumPage");
+  const t = useTranslations("PrivacyPage");
 
   return (
     <main className="flex flex-col row-start-2 items-center sm:items-center">
@@ -99,12 +87,6 @@ export default function ImpressumPage() {
           </p>
         </div>
       </section>
-
-      <Contact
-        sectionId="contact"
-        title={t("contactTitle")}
-        text={t("contactText")}
-      />
     </main>
   );
 }
