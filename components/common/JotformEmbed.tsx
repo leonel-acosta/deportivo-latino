@@ -31,11 +31,6 @@ export default function JotformEmbed({
       allow="geolocation; microphone; camera; fullscreen; payment"
       scrolling="no"
       loading="lazy"
-      onLoad={() => {
-        if (typeof window !== "undefined" && window.parent) {
-          window.parent.scrollTo?.(0, 0);
-        }
-      }}
     />
   );
 }

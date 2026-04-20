@@ -19,23 +19,23 @@ export default function Header() {
     <header className="sticky top-0 bg-secondary text-white py-4 px-6 sm:px-10 flex items-center justify-between z-50">
       {/* Logo */}
       <div className="w-24">
-        <a href="/#" className="hover:underline">
+        <a href="#" className="hover:underline">
           <Logo />
         </a>
       </div>
 
       {/* Desktop Menu */}
       <nav className="hidden sm:flex space-x-6 lg:space-x-8 uppercase text-sm font-semibold items-center">
-        <a href="/#mission" className="hover:underline">
+        <a href="#mission" className="hover:underline">
           {t("missionLink")}
         </a>
-        <a href="/#teams" className="hover:underline">
+        <a href="#teams" className="hover:underline">
           {t("teamsLink")}
         </a>
-        <a href="/#contact" className="hover:underline">
+        <a href="#contact" className="hover:underline">
           {t("contactLink")}
         </a>
-        <a href="/#contact">
+        <a href="#contact">
           <Button accent text={t("joinButton")} />
         </a>
         <LanguageSwitcher />
@@ -69,16 +69,16 @@ export default function Header() {
             </button>
 
             {/* Nav Links */}
-            <a href="/#mission" onClick={closeMenu} className="hover:underline">
+            <a href="#mission" onClick={closeMenu} className="hover:underline">
               {t("missionLink")}
             </a>
-            <a href="/#teams" onClick={closeMenu} className="hover:underline">
+            <a href="#teams" onClick={closeMenu} className="hover:underline">
               {t("teamsLink")}
             </a>
-            <a href="/#contact" onClick={closeMenu} className="hover:underline">
+            <a href="#contact" onClick={closeMenu} className="hover:underline">
               {t("contactLink")}
             </a>
-            <a href="/#contact" onClick={closeMenu}>
+            <a href="#contact" onClick={closeMenu}>
               <Button accent text={t("joinButton")} />
             </a>
             <LanguageSwitcher />

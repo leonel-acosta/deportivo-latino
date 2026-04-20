@@ -22,7 +22,7 @@ export default function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="/#"
+              href="#"
             >
               {t("homeLink")}
             </a>
@@ -31,7 +31,7 @@ export default function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="/#mision"
+              href="#mision"
             >
               {t("missionLink")}
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="/#teams"
+              href="#teams"
             >
               {t("teamsLink")}
             </a>
@@ -49,7 +49,7 @@ export default function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="/#results"
+              href="#results"
             >
               {t("resultsLink")}
             </a>
@@ -58,7 +58,7 @@ export default function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-              href="/#contact"
+              href="#contact"
             >
               {t("contactLink")}
             </a>
