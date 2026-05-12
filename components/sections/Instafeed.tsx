@@ -43,33 +43,27 @@ export default function Instafeed({
             : "bg-white text-foreground"
         }`}
       >
-        <h2 className="uppercase mb-2 heading-font">{title}</h2>
-        <p className="text-lg mb-6">{text}</p>
-        <Script
-          type="text/javascript"
-          src="https://widget.tagembed.com/embed.min.js"
-        />
-
-        {/* {embedCode ? (
-          <iframe
-            src={embedCode}
-            scrolling="no"
-            className="w-full border-0 overflow-hidden"
-            style={{ height: "600px", marginBottom: "20px" }}
-          ></iframe>
-        ) : null}  */}
-
-        <div
-          className="tagembed-widget"
-          style={{ width: "100%", height: "100%", overflow: "auto" }}
-          data-widget-id="304737"
-          data-website="1"
-        ></div>
+        <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">{title}</h2>
+        <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">{text}</p>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <Script
+            type="text/javascript"
+            src="https://widget.tagembed.com/embed.min.js"
+          />
+          <div
+            className="tagembed-widget"
+            style={{ width: "100%", height: "100%", overflow: "auto" }}
+            data-widget-id="304737"
+            data-website="1"
+          ></div>
+        </div>
 
         {button && buttonUrl && (
-          <Link href={buttonUrl}>
-            <Button text={button} />
-          </Link>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <Link href={buttonUrl}>
+              <Button text={button} />
+            </Link>
+          </div>
         )}
       </section>
     </>

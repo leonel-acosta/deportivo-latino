@@ -50,20 +50,20 @@ export default function Stats({
       >
         {title && text && (
           <>
-            <h2 className="uppercase mb-2 heading-font">{title}</h2>
-            <p className="text-lg mb-6">{text}</p>
+            <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">{title}</h2>
+            <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">{text}</p>
           </>
         )}
         <div className="flex flex-wrap flex-row justify-evenly gap-10">
-          <div className="flex flex-col items-center gap-0">
+          <div className="flex flex-col items-center gap-0" data-aos="zoom-in" data-aos-delay="0">
             <p className="text-lg">{valueTeams}</p>
             <h4 className="text-2xl font-bold">{titleTeams}</h4>
           </div>
-          <div className="flex flex-col items-center gap-0">
+          <div className="flex flex-col items-center gap-0" data-aos="zoom-in" data-aos-delay="100">
             <p className="text-lg">{valueMembers}</p>
             <h4 className="text-2xl font-bold">{titleMembers}</h4>
           </div>
-          <div className="flex flex-col items-center gap-0">
+          <div className="flex flex-col items-center gap-0" data-aos="zoom-in" data-aos-delay="200">
             <p className="text-lg">{valueNationalities}</p>
             <h4 className="text-2xl font-bold">{titleNationalities}</h4>
           </div>

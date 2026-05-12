@@ -57,6 +57,7 @@ export default function ImageBanner({
           className={`p-10 w-fit lg:w-[700px] bg-secondary  text-white bg-opaciy-80 shadow-lg ${
             center ? "mx-auto text-center" : ""
           } `}
+          data-aos="fade-right"
         >
           <h2 className="uppercase mb-2 heading-font">{title}</h2>
           <p className="text-lg mb-6">{text}</p>

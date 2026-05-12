@@ -45,12 +45,14 @@ export default function Results({
             : "bg-white text-foreground"
         }`}
       >
-        <h2 className="uppercase mb-2 heading-font">{title}</h2>
-        <p className="text-lg mb-6">{text}</p>
+        <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">{title}</h2>
+        <p className="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">{text}</p>
         <div
           className="fussballde_widget body-font"
           data-id="cb1d3b75-0d79-4617-96b9-e8fa6e36ebad"
           data-type="club-matches"
+          data-aos="fade-up"
+          data-aos-delay="200"
         ></div>
       </section>
     </>

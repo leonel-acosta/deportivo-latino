@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import JotformEmbed from "@/components/common/JotformEmbed";
+import ContactForm from "@/components/sections/ContactForm";
 
 interface ContactProps {
   title: string;
@@ -20,12 +20,14 @@ export default function Contact({
   secondary,
   tertiary,
 }: ContactProps) {
-  const t = useTranslations("LandingPage"); // Puedes usarlo si title o text vienen como keys
+  useTranslations("LandingPage");
+
+  const onDark = primary || secondary || tertiary;
 
   return (
     <section
       id={sectionId}
-      className={`w-full text-center py-16 md:py-24 lg:py-32 px-5 md:px-6 lg:px-8x-5 md:px-6 lg:px-8 ${
+      className={`w-full text-center py-16 md:py-24 lg:py-32 px-5 md:px-6 lg:px-8 ${
         primary
           ? "bg-primary text-white"
           : secondary
@@ -35,9 +37,11 @@ export default function Contact({
           : "bg-white text-foreground"
       }`}
     >
-      <h2 className="uppercase mb-2 heading-font">{title}</h2>
-      <p className="text-lg mb-0">{text}</p>
-      <JotformEmbed src="https://form.jotform.com/252011130906037" />
+      <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">{title}</h2>
+      <p className="text-lg mb-0" data-aos="fade-up" data-aos-delay="100">{text}</p>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <ContactForm onDark={onDark} />
+      </div>
     </section>
   );
 }
