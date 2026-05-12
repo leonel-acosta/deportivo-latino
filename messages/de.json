@@ -58,6 +58,18 @@
     "copyright": "Alle Rechte vorbehalten.",
     "contactText": "Hast du Fragen oder möchtest du dich uns anschließen? Kontaktiere uns über das Formular."
   },
+  "ContactForm": {
+    "name": "Name",
+    "namePlaceholder": "Dein Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "du@email.de",
+    "message": "Nachricht",
+    "messagePlaceholder": "Wie können wir dir helfen?",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht gesendet! Wir melden uns bald bei dir.",
+    "error": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut."
+  },
   "ImpressumPage": {
     "impressumTitle": "Impressum",
     "impressumText": ""

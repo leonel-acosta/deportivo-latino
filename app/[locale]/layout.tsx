@@ -5,6 +5,7 @@ import { Permanent_Marker } from "next/font/google";
 import ".././globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import AOSInit from "@/components/common/AOSInit";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
       <body
         className={`${spaceGrotesk.variable} ${spaceMono.variable} ${permanentmarker.variable} antialiased relative`}
       >
+        <AOSInit />
         <NextIntlClientProvider>
           <Header />
           {children}

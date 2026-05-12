@@ -58,6 +58,18 @@
     "copyright": "All rights reserved.",
     "contactText": "Do you have questions or want to join us? Contact us through the form."
   },
+  "ContactForm": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! We'll get back to you soon.",
+    "error": "There was an error sending your message. Please try again."
+  },
   "ImpressumPage": {
     "impressumTitle": "Imprint",
     "impressumText": ""

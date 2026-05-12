@@ -37,15 +37,15 @@ export default function PageTitle({
     >
       <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto  text-center">
-          <h1 className="px-2 text-size-3xl tracking-tight text-white lg:text-5xl font-bold sm:text-5xl uppercase">
+          <h1 className="px-2 text-size-3xl tracking-tight text-white lg:text-5xl font-bold sm:text-5xl uppercase" data-aos="fade-up">
             {title}
           </h1>
           {text && (
-            <p className="mt-4 px-5 text-prose text-base text-pretty text-white sm:text-lg/relaxed uppercase font-bold">
+            <p className="mt-4 px-5 text-prose text-base text-pretty text-white sm:text-lg/relaxed uppercase font-bold" data-aos="fade-up" data-aos-delay="100">
               {text}
             </p>
           )}
-          <div className="mt-4 flex justify-center gap-4 sm:mt-6">
+          <div className="mt-4 flex justify-center gap-4 sm:mt-6" data-aos="fade-up" data-aos-delay="200">
             <a href="/#contact">
               {button && buttonUrl && (
                 <Link href={buttonUrl}>

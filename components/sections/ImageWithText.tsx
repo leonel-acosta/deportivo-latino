@@ -59,6 +59,7 @@ export default function ImageWithText({
           className={`h-fit px-10 lg:px-20 py-20 my-auto ${
             reverse ? "order-first lg:order-last" : "order-first lg:order-first"
           } ${center ? "text-left lg:text-center" : "text-left lg:text-left"}`}
+          data-aos={vertical ? "fade-up" : reverse ? "fade-left" : "fade-right"}
         >
           <h2 className="uppercase mb-2 heading-font">{title}</h2>
           <p className="text-lg mb-6">{text}</p>
@@ -73,6 +74,8 @@ export default function ImageWithText({
             className={`w-full h-[400px] lg:w-full lg:h-[500px] relative overflow-hidden shadow-lg mx-auto ${
               reverse ? "order-last lg:order-first" : "order-last lg:order-last"
             }`}
+            data-aos={vertical ? "fade-up" : reverse ? "fade-right" : "fade-left"}
+            data-aos-delay="150"
           >
             {videoUrl && (
               <video
