@@ -77,5 +77,24 @@
   "PrivacyPage": {
     "privacyTitle": "Datenschutz",
     "privacyText": ""
+  },
+  "CookieBanner": {
+    "ariaLabel": "Cookie-Einwilligung",
+    "title": "Wir verwenden Cookies",
+    "description": "Wir verwenden Cookies, um deine Erfahrung auf unserer Website zu verbessern. Du kannst wählen, welche Kategorien du zulässt. Weitere Informationen findest du in unserer",
+    "privacyLink": "Datenschutzerklärung",
+    "acceptAll": "Alle akzeptieren",
+    "rejectAll": "Alle ablehnen",
+    "customize": "Anpassen",
+    "hideDetails": "Details ausblenden",
+    "savePreferences": "Einstellungen speichern",
+    "detailsIntro": "Wähle, welche Cookie-Kategorien du zulassen möchtest:",
+    "necessaryLabel": "Notwendig",
+    "necessaryDesc": "Erforderlich für den ordnungsgemäßen Betrieb der Website. Kann nicht deaktiviert werden.",
+    "analyticsLabel": "Analyse",
+    "analyticsDesc": "Helfen uns zu verstehen, wie Besucher mit der Website interagieren, indem anonyme Daten gesammelt werden.",
+    "marketingLabel": "Marketing",
+    "marketingDesc": "Werden verwendet, um personalisierte Inhalte und für dich relevante Werbung anzuzeigen.",
+    "alwaysOn": "immer aktiv"
   }
 }

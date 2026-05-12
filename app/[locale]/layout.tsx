@@ -6,6 +6,7 @@ import ".././globals.css";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import AOSInit from "@/components/common/AOSInit";
+import CookieBanner from "@/components/common/CookieBanner";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
           <Header />
           {children}
           <Footer />
+          <CookieBanner />
         </NextIntlClientProvider>
       </body>
     </html>
