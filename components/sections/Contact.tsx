@@ -31,14 +31,18 @@ export default function Contact({
         primary
           ? "bg-primary text-white"
           : secondary
-          ? "bg-secondary text-white"
-          : tertiary
-          ? "bg-tertiary text-white"
-          : "bg-white text-foreground"
+            ? "bg-secondary text-white"
+            : tertiary
+              ? "bg-tertiary text-white"
+              : "bg-white text-foreground"
       }`}
-    >
-      <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">{title}</h2>
-      <p className="text-lg mb-0" data-aos="fade-up" data-aos-delay="100">{text}</p>
+    > 
+      <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">
+        {title}
+      </h2>
+      <p className="text-lg mb-0" data-aos="fade-up" data-aos-delay="100">
+        {text}
+      </p>
       <div data-aos="fade-up" data-aos-delay="200">
         <ContactForm onDark={onDark} />
       </div>
