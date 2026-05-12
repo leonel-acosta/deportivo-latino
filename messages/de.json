@@ -68,7 +68,8 @@
     "submit": "Nachricht senden",
     "sending": "Wird gesendet...",
     "success": "Nachricht gesendet! Wir melden uns bald bei dir.",
-    "error": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut."
+    "error": "Beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+    "newsletterConsent": "Ich stimme zu, Neuigkeiten und Updates von Club Deportivo Latino Berlin per E-Mail zu erhalten. Ich kann mich jederzeit abmelden."
   },
   "ImpressumPage": {
     "impressumTitle": "Impressum",

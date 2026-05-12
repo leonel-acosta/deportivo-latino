@@ -10,7 +10,10 @@ interface ContactFormProps {
 export default function ContactForm({ onDark }: ContactFormProps) {
   const t = useTranslations("ContactForm");
   const formRef = useRef<HTMLFormElement>(null);
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [newsletter, setNewsletter] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -21,6 +24,7 @@ export default function ContactForm({ onDark }: ContactFormProps) {
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
+      newsletter,
       honeypot: formData.get("website"),
     };
 
@@ -31,17 +35,20 @@ export default function ContactForm({ onDark }: ContactFormProps) {
         body: JSON.stringify(payload),
       });
       setStatus(res.ok ? "success" : "error");
-      if (res.ok) formRef.current?.reset();
+      if (res.ok) {
+        formRef.current?.reset();
+        setNewsletter(false);
+      }
     } catch {
       setStatus("error");
     }
   }
 
   const inputBase =
-    "w-full px-4 py-3 rounded-lg border focus:outline-none transition body-font text-sm";
+    "w-full px-4 py-3 border-2 focus:outline-none transition body-font text-sm";
   const inputStyle = onDark
-    ? `${inputBase} bg-white/10 border-white/30 text-white placeholder-white/50 focus:border-white focus:ring-1 focus:ring-white/40`
-    : `${inputBase} bg-white border-gray-300 text-foreground placeholder-gray-400 focus:border-blue-700 focus:ring-1 focus:ring-blue-700/30`;
+    ? `${inputBase} bg-white/10 border-white/70 text-white placeholder-white/50 focus:border-white focus:ring-1 focus:ring-white/40`
+    : `${inputBase} bg-white border-gray-400 text-foreground placeholder-gray-400 focus:border-blue-700 focus:ring-1 focus:ring-blue-700/30`;
 
   const labelStyle = `block text-sm font-semibold mb-1 ${onDark ? "text-white/90" : "text-foreground"}`;
 
@@ -53,7 +60,16 @@ export default function ContactForm({ onDark }: ContactFormProps) {
       noValidate
     >
       {/* Honeypot — invisible to humans, attractive to bots */}
-      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+        }}
+      >
         <label htmlFor="website">Website</label>
         <input
           type="text"
@@ -107,10 +123,25 @@ export default function ContactForm({ onDark }: ContactFormProps) {
           />
         </div>
 
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            id="cf-newsletter"
+            checked={newsletter}
+            onChange={(e) => setNewsletter(e.target.checked)}
+            className="mt-0.5 h-4 w-4 shrink-0 accent-primary cursor-pointer"
+          />
+          <span
+            className={`text-xs leading-relaxed ${onDark ? "text-white/80" : "text-gray-600"}`}
+          >
+            {t("newsletterConsent")}
+          </span>
+        </label>
+
         <button
           type="submit"
           disabled={status === "loading"}
-          className={`w-full py-3 px-6 rounded-lg font-semibold transition disabled:opacity-60 heading-font uppercase tracking-wide ${
+          className={`w-full py-3 px-6 font-semibold transition disabled:opacity-60 heading-font uppercase tracking-wide ${
             onDark
               ? "bg-white text-primary hover:bg-white/90"
               : "bg-primary text-white hover:opacity-90"
@@ -120,12 +151,16 @@ export default function ContactForm({ onDark }: ContactFormProps) {
         </button>
 
         {status === "success" && (
-          <p className={`text-center text-sm font-medium ${onDark ? "text-white" : "text-green-700"}`}>
+          <p
+            className={`text-center text-sm font-medium ${onDark ? "text-white" : "text-green-700"}`}
+          >
             {t("success")}
           </p>
         )}
         {status === "error" && (
-          <p className={`text-center text-sm font-medium ${onDark ? "text-white/80" : "text-red-600"}`}>
+          <p
+            className={`text-center text-sm font-medium ${onDark ? "text-white/80" : "text-red-600"}`}
+          >
             {t("error")}
           </p>
         )}

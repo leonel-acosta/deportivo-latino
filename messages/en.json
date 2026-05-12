@@ -68,7 +68,8 @@
     "submit": "Send message",
     "sending": "Sending...",
     "success": "Message sent! We'll get back to you soon.",
-    "error": "There was an error sending your message. Please try again."
+    "error": "There was an error sending your message. Please try again.",
+    "newsletterConsent": "I agree to receive news and updates from Club Deportivo Latino Berlin by email. I can unsubscribe at any time."
   },
   "ImpressumPage": {
     "impressumTitle": "Imprint",
