@@ -5,6 +5,12 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: unknown[]) => void;
+  }
+}
+
 interface CookieConsent {
   necessary: true;
   analytics: boolean;
@@ -12,6 +18,16 @@ interface CookieConsent {
 }
 
 const STORAGE_KEY = "cdl_cookie_consent";
+
+function updateGtmConsent(consent: Omit<CookieConsent, "necessary">) {
+  if (typeof window === "undefined" || !window.gtag) return;
+  window.gtag("consent", "update", {
+    analytics_storage: consent.analytics ? "granted" : "denied",
+    ad_storage: consent.marketing ? "granted" : "denied",
+    ad_user_data: consent.marketing ? "granted" : "denied",
+    ad_personalization: consent.marketing ? "granted" : "denied",
+  });
+}
 
 export default function CookieBanner() {
   const t = useTranslations("CookieBanner");
@@ -25,14 +41,23 @@ export default function CookieBanner() {
   const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) setVisible(true);
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) {
+      setVisible(true);
+      return;
+    }
+    // Restore previously granted consent to GTM on every page load
+    try {
+      const stored: CookieConsent = JSON.parse(raw);
+      updateGtmConsent(stored);
+    } catch {
+      setVisible(true);
+    }
   }, []);
 
   // Trap focus inside the modal while visible
   useEffect(() => {
     if (!visible) return;
-
     const el = dialogRef.current;
     if (!el) return;
 
@@ -41,7 +66,6 @@ export default function CookieBanner() {
     );
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
-
     first?.focus();
 
     function handleKeyDown(e: KeyboardEvent) {
@@ -65,16 +89,13 @@ export default function CookieBanner() {
 
   // Prevent background scroll while modal is open
   useEffect(() => {
-    if (visible) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = visible ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [visible]);
 
   function saveConsent(consent: CookieConsent) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+    updateGtmConsent(consent);
     setVisible(false);
   }
 
@@ -94,7 +115,7 @@ export default function CookieBanner() {
 
   return (
     <>
-      {/* Backdrop — blocks interaction with page content */}
+      {/* Backdrop */}
       <div
         className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm"
         aria-hidden="true"
@@ -132,11 +153,10 @@ export default function CookieBanner() {
               </p>
             </div>
 
-            {/* Details / toggles */}
+            {/* Granular toggles */}
             {showDetails && (
               <div className="border-t border-gray-600 pt-4 flex flex-col gap-3">
                 <p className="text-sm text-gray-300 mb-1">{t("detailsIntro")}</p>
-
                 <Toggle
                   id="cookie-necessary"
                   label={t("necessaryLabel")}
