@@ -6,6 +6,7 @@ import Hero from "@/components/sections/Hero";
 import ImageWithText from "@/components/sections/ImageWithText";
 import Instafeed from "@/components/sections/Instafeed";
 import Results from "@/components/sections/Results";
+import Sponsors from "@/components/sections/Sponsors";
 import Teams from "@/components/sections/Teams";
 import Stats from "@/components/sections/Stats";
 import ImageBanner from "@/components/sections/ImageBanner";
@@ -87,6 +88,7 @@ export default function Home() {
         button={t("fundraisingButton")}
         buttonUrl="https://www.startnext.de/"
       />
+      <Sponsors sectionId="sponsors" />
       <Instafeed
         sectionId="instafeed"
         title={t("instafeedTitle")}

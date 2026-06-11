@@ -36,7 +36,7 @@ export default function Contact({
               ? "bg-tertiary text-white"
               : "bg-white text-foreground"
       }`}
-    > 
+    >
       <h2 className="uppercase mb-2 heading-font" data-aos="fade-up">
         {title}
       </h2>
